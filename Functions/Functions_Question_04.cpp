@@ -37,12 +37,14 @@ using namespace std;
 int main(){
     cout<<"This is a program to calculate ncr(combinations)"<<endl;
 
+
     int n,r;
     cout<<"Enter the total number of items in the set here : ";
     cin>>n;
     cout<<"Enter the number of items you want to select here : ";
     cin>>r;
 
+    
     cout<<"ncr() = "<<binomial_combination(n,r)<<endl;
     return 0;
 }

@@ -1,38 +1,35 @@
-//QUESTION - Reverse an array
+//Reverse an array
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    cout<<"This is a program to reverse and array and display it "<<endl;
-
-    int n;
-    cout<<"Enter the size of the array here : ";
-    cin>>n;
+    cout<<"This is a program to reverse an array "<<endl;
 
     int arr[67];
+    int n;
 
+    cout<<"Enter the number of elements in the array here : ";
+    cin>>n;
+
+    cout<<"Enter the elements in the array : "<<endl;
     for (int i = 0; i < n; i++)
     {
-        cout<<"Enter element "<<i+1<<" : ";
         cin>>arr[i];
     }
 
-    int temp;
-
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n/2; i++)
     {
-        arr[i] = temp;
-        temp = arr[n-i-1];
-        arr[n-i-1] = arr[i];
+        int temp = arr[i];
+        arr[i] = arr[n-i-1];
+        arr[n-i-1] = temp;
     }
 
     for (int i = 0; i < n; i++)
     {
-        cout<<arr[i];        
+        cout<<arr[i];
     }
     
-    
-
+        
     return 0;
 }

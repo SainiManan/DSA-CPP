@@ -35,8 +35,8 @@ This repository contains my implementations, practice problems, and solutions as
 
 ### 03. Arrays
 
-* [ ] Array Basics
-* [ ] Array Traversal
+* [x] Array Basics
+* [x] Array Traversal
 * [ ] Vectors
 * [ ] Maximum & Minimum Element
 * [ ] Linear Search
